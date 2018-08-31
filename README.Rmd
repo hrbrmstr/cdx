@@ -1,0 +1,32 @@
+---
+output: rmarkdown::github_document
+---
+
+# cdx
+
+## Description
+
+## What's Inside The Tin
+
+The following functions are implemented:
+
+## Installation
+
+```{r eval=FALSE}
+devtools::install_github("hrbrmstr/cdx")
+```
+
+```{r message=FALSE, warning=FALSE, error=FALSE, include=FALSE}
+options(width=120)
+```
+
+## Usage
+
+```{r message=FALSE, warning=FALSE, error=FALSE}
+library(cdx)
+
+# current verison
+packageVersion("cdx")
+
+```
+
