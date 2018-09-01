@@ -4,8 +4,13 @@
 \name{cdx}
 \alias{cdx}
 \alias{cdx-package}
-\title{...}
+\title{Query Web Archive Crawl Indexes ('CDX')}
 \description{
+Methods are provided to retrieve web archive crawl index ('CDX') metadata
+and directly query the 'CDX' 'API' endpoint to retrieve mementos for a
+given set of parameters.
+}
+\details{
 \itemize{
 \item URL: \url{https://gitlab.com/hrbrmstr/cdx}
 \item BugReports: \url{https://gitlab.com/hrbrmstr/cdx/issues}

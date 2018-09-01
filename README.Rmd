@@ -4,11 +4,18 @@ output: rmarkdown::github_document
 
 # cdx
 
+Query Web Archive Crawl Indexes ('CDX')
+
 ## Description
+
+Methods are provided to retrieve web archive crawl index ('CDX') metadata and directly query the 'CDX' 'API' endpoint to retrieve mementos for a given set of parameters.
 
 ## What's Inside The Tin
 
 The following functions are implemented:
+
+- `cdx_query`:	Query a CDX index endpoint
+- `fetch_collections_index`:	Fetch collections index
 
 ## Installation
 
@@ -24,9 +31,19 @@ options(width=120)
 
 ```{r message=FALSE, warning=FALSE, error=FALSE}
 library(cdx)
+library(tidyverse)
 
 # current verison
 packageVersion("cdx")
 
 ```
 
+### Example
+
+```{r message=FALSE, warning=FALSE, error=FALSE}
+cidx <- fetch_collections_index()
+
+rprj <- cdx_query(cidx$cdx_api[1], "*.r-project.org")
+
+rprj
+```
